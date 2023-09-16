@@ -4,17 +4,38 @@ const Footer = () => {
   return (
     <div>
       <footer className="flex flex-col text-[#fffef2] bg-[#252525]">
-        <div className="grid grid-cols-4 grid-flow-row gap-4  py-6 text-center space-x-6 md:text-left p-6 mt-8">
+        <div className="grid grid-cols-4 grid-flow-row gap-4  py-6 text-center space-x-6 md:text-left p-6 mt-8 ">
           <div>
             <section>
               <h3 className="font-bold">Subscribe to Aesop communications</h3>
               <div className="border-t my-4 border-[#fffef2] ">
                 <div className="mt-8">
                   <div className="relative h-10 w-full min-w-[200px]">
-                    <input
-                      className="h-full w-full border border-blue-gray-200  bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border "
-                      placeholder="Email address "
-                    />
+                    <div className="flex flex-row border py-2 px-2 space-x-32 cursor-pointer ">
+                      <input
+                        placeholder="Email address"
+                        className="bg-transparent"
+                      />
+                      <span>
+                        <svg
+                          className="h-6 w-6 ml-1"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          {" "}
+                          <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                          <line x1="5" y1="12" x2="19" y2="12" />{" "}
+                          <line x1="13" y1="18" x2="19" y2="12" />{" "}
+                          <line x1="13" y1="6" x2="19" y2="12" />
+                        </svg>
+                      </span>
+                    </div>
                     <input
                       type="checkbox"
                       value=""
